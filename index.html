@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DriveEase - Premium Car Rental</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="car rental, premium cars, drive ease, vehicle hire" name="keywords">
+    <meta content="DriveEase offers premium, reliable, and affordable car rental services with a modern fleet." name="description">
+
+    <!-- Google Web Fonts (Updated to match CSS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Top Info Bar Start -->
+    <div class="top-info-bar py-2 d-none d-md-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="me-4"><i class="fas fa-phone-alt me-2"></i>(+012) 3456 7890</span>
+                    <span><i class="fas fa-envelope me-2"></i>bookings@driveease.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-inline-flex align-items-center gap-3">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <div class="vr bg-white-50 mx-1" style="opacity: 0.3;"></div>
+                        <div class="dropdown">
+                            <a class="lang-dropdown text-decoration-none small fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-globe me-1"></i> EN <i class="fas fa-chevron-down ms-1" style="font-size: 10px;"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2">
+                                <li><a class="dropdown-item py-2" href="#">🇺🇸 English</a></li>
+                                <li><a class="dropdown-item py-2" href="#">🇪🇸 Spanish</a></li>
+                                <li><a class="dropdown-item py-2" href="#">🇫🇷 French</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Info Bar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar sticky-top px-4 px-lg-5 py-3 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html" class="navbar-brand p-0 d-flex align-items-center">
+                <h1 class="display-6 fw-bold mb-0 text-dark">
+                    <i class="fas fa-dharmachakra text-dark me-2" style="font-size: 1.8rem;"></i>DriveEase
+                </h1>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="fleet.html" class="nav-item nav-link">Fleet</a>
+                    <a href="services.html" class="nav-item nav-link">Services</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="signin.html" class="btn btn-signin rounded-pill py-2 px-4 flex-shrink-0 shadow-sm d-flex align-items-center gap-2">
+                    <i class="fas fa-user"></i> Sign In
+                </a>
+                 <a href="book.html" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0 shadow-sm">Book a Car</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+        <!-- Carousel Hero Start -->
+    <div class="header-carousel owl-carousel">
+        <!-- Slide 1 -->
+        <div class="header-carousel-item">
+            <img src="img/Cars/jonathan-borba-LR5O79shvro-unsplash.jpg" class="img-fluid w-100" alt="Jeep Wrangler">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center wow fadeInUp" data-wow-delay="0.2s">
+                            <h4 class="text-primary text-uppercase fw-bold mb-3" style="letter-spacing: 2px;">Premium Car Rental</h4>
+                            <h1 class="display-3 text-white mb-4 fw-bold">Drive Your Dream Car Today</h1>
+                            <p class="text-white mb-5 fs-5 opacity-75">Experience the ultimate driving pleasure with our meticulously maintained premium fleet.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="col-lg-10">
+                            <div class="ticket-form p-4 p-md-5">
+                                <form class="row g-3">
+                                    <div class="col-md-3">
+                                        <label class="form-label text-dark small fw-bold text-uppercase">Pick-up</label>
+                                        <input type="text" class="form-control border-0 py-2" placeholder="City or Airport">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label text-dark small fw-bold text-uppercase">Drop-off</label>
+                                        <input type="text" class="form-control border-0 py-2" placeholder="City or Airport">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label text-dark small fw-bold text-uppercase">Date</label>
+                                        <input type="date" class="form-control border-0 py-2">
+                                    </div>
+                                    <div class="col-md-3 d-flex align-items-end">
+                                        <button type="button" class="btn btn-primary w-100 py-2 fw-bold rounded-pill">Find Your Car</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="header-carousel-item">
+            <img src="img/Cars/gene-giromini-G11tjU3YlXY-unsplash.jpg" class="img-fluid w-100" alt="VW Van">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center wow fadeInUp" data-wow-delay="0.2s">
+                            <h4 class="text-primary text-uppercase fw-bold mb-3" style="letter-spacing: 2px;">Unmatched Luxury</h4>
+                            <h1 class="display-3 text-white mb-4 fw-bold">Elevate Your Journey</h1>
+                            <p class="text-white mb-5 fs-5 opacity-75">From sports cars to spacious SUVs, find the perfect vehicle for any occasion.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="col-lg-10">
+                            <div class="ticket-form p-4 p-md-5">
+                                <form class="row g-3">
+                                    <div class="col-md-3">
+                                        <label class="form-label text-dark small fw-bold text-uppercase">Pick-up</label>
+                                        <input type="text" class="form-control border-0 py-2" placeholder="City or Airport">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label text-dark small fw-bold text-uppercase">Drop-off</label>
+                                        <input type="text" class="form-control border-0 py-2" placeholder="City or Airport">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label text-dark small fw-bold text-uppercase">Date</label>
+                                        <input type="date" class="form-control border-0 py-2">
+                                    </div>
+                                    <div class="col-md-3 d-flex align-items-end">
+                                        <button type="button" class="btn btn-primary w-100 py-2 fw-bold rounded-pill">Find Your Car</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="header-carousel-item">
+            <img src="img/Cars/florian-schneider-799KfBloSFQ-unsplash.jpg" class="img-fluid w-100" alt="Sports Car">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center wow fadeInUp" data-wow-delay="0.2s">
+                            <h4 class="text-primary text-uppercase fw-bold mb-3" style="letter-spacing: 2px;">Smooth Driving</h4>
+                            <h1 class="display-3 text-white mb-4 fw-bold">Experience The Best</h1>
+                            <p class="text-white mb-5 fs-5 opacity-75">From sports cars to spacious SUVs, find the perfect vehicle for any occasion.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="col-lg-10">
+                            <div class="ticket-form p-4 p-md-5">
+                                <form class="row g-3">
+                                    <div class="col-md-3">
+                                        <label class="form-label text-dark small fw-bold text-uppercase">Pick-up</label>
+                                        <input type="text" class="form-control border-0 py-2" placeholder="City or Airport">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label text-dark small fw-bold text-uppercase">Drop-off</label>
+                                        <input type="text" class="form-control border-0 py-2" placeholder="City or Airport">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label text-dark small fw-bold text-uppercase">Date</label>
+                                        <input type="date" class="form-control border-0 py-2">
+                                    </div>
+                                    <div class="col-md-3 d-flex align-items-end">
+                                        <button type="button" class="btn btn-primary w-100 py-2 fw-bold rounded-pill">Find Your Car</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel Hero End -->
+     
+    <!-- Brand Carousel Start -->
+    <div class="container-fluid py-4 bg-light">
+        <div class="container">
+            <div class="text-center mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <p class="text-uppercase fw-semibold text-muted mb-0" style="letter-spacing: 2px; font-size: 0.8rem;">Trusted by the World's Leading Brands</p>
+            </div>
+            <div class="owl-carousel brand-carousel owl-theme">
+                <div class="brand-item"><img src="img/logos/Porsche-Logo.wine.svg" alt="Porsche"></div>
+                <div class="brand-item"><img src="img/logos/Mercedes-Benz-Logo.wine.svg" alt="Mercedes-Benz"></div>
+                <div class="brand-item"><img src="img/logos/BMW-Logo.wine.svg" alt="BMW"></div>
+                <div class="brand-item"><img src="img/logos/Audi-Logo.wine.svg" alt="Audi"></div>
+                <div class="brand-item"><img src="img/logos/Jeep-Logo.wine.svg" alt="Jeep"></div>
+                <div class="brand-item"><img src="img/logos/Ferrari-Logo.wine.svg" alt="Ferrari"></div>
+                <div class="brand-item"><img src="img/logos/Lamborghini-Logo.wine.svg" alt="Lamborghini"></div>
+                <div class="brand-item"><img src="img/logos/Lexus-Logo.wine.svg" alt="Lexus"></div>
+                <div class="brand-item"><img src="img/logos/Land_Rover-Logo.wine.svg" alt="Land Rover"></div>
+                <div class="brand-item"><img src="img/logos/McLaren_Group-Logo.wine.svg" alt="McLaren"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Brand Carousel End -->
+
+    <!-- Popular Cars Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="text-primary fw-bold text-uppercase mb-3">Our Fleet</h4>
+                <h1 class="display-5 fw-bold mb-0">Popular Rental Cars</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="car-card rounded-4 h-100 d-flex flex-column">
+                        <div class="car-img-wrapper position-relative overflow-hidden">
+                            <img src="img/Cars/gene-giromini-G11tjU3YlXY-unsplash.jpg" class="w-100 h-100" style="object-fit: cover;" alt="VW Type 2 Van">
+                            <span class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 m-3 rounded-pill small fw-bold shadow-sm">$120/day</span>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold mb-2">VW Type 2 Classic Van</h5>
+                            <p class="text-muted small mb-3">Experience the ultimate retro road trip. Iconic vintage design, spacious interior, and pure nostalgic vibes.</p>
+                            <div class="car-specs mt-auto">
+                                <span><i class="fas fa-user"></i> 5 Seats</span>
+                                <span><i class="fas fa-cog"></i> Manual</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold mt-3">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="car-card rounded-4 h-100 d-flex flex-column">
+                        <div class="car-img-wrapper position-relative overflow-hidden">
+                            <img src="img/Cars/2024_jeep_wrangler_1_1920x1080.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Jeep Wrangler">
+                            <span class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 m-3 rounded-pill small fw-bold shadow-sm">$95/day</span>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold mb-2">Jeep Wrangler 4xe</h5>
+                            <p class="text-muted small mb-3">Conquer any terrain with confidence. Spacious, rugged, and equipped with the latest 4x4 hybrid technology.</p>
+                            <div class="car-specs mt-auto">
+                                <span><i class="fas fa-user"></i> 5 Seats</span>
+                                <span><i class="fas fa-cog"></i> Auto</span>
+                                <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold mt-3">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="car-card rounded-4 h-100 d-flex flex-column">
+                        <div class="car-img-wrapper position-relative overflow-hidden">
+                            <img src="img/Cars/2025_toyota_sienna_1_1920x1080.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Toyota Sienna">
+                            <span class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 m-3 rounded-pill small fw-bold shadow-sm">$85/day</span>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold mb-2">Toyota Sienna</h5>
+                            <p class="text-muted small mb-3">The perfect family hauler. Offers exceptional fuel economy, generous cargo space, and premium comfort.</p>
+                            <div class="car-specs mt-auto">
+                                <span><i class="fas fa-user"></i> 7 Seats</span>
+                                <span><i class="fas fa-cog"></i> Auto</span>
+                                <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold mt-3">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="car-card rounded-4 h-100 d-flex flex-column">
+                        <div class="car-img-wrapper position-relative overflow-hidden">
+                            <img src="img/Cars/2027_bmw_3_series_1_1600x1200.jpg" class="w-100 h-100" style="object-fit: cover;" alt="BMW 3 Series">
+                            <span class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 m-3 rounded-pill small fw-bold shadow-sm">$110/day</span>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold mb-2">BMW 3 Series</h5>
+                            <p class="text-muted small mb-3">The ultimate driving machine. Combines luxury, dynamic handling, and cutting-edge tech for executives.</p>
+                            <div class="car-specs mt-auto">
+                                <span><i class="fas fa-user"></i> 5 Seats</span>
+                                <span><i class="fas fa-cog"></i> Auto</span>
+                                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold mt-3">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.1s">
+                <a href="fleet.html" class="btn btn-primary rounded-pill py-3 px-5 fw-bold">View All Vehicles</a>
+            </div>
+        </div>
+    </div>
+    <!-- Popular Cars End -->
+
+    <!-- Gallery Start -->
+    <div class="container-fluid gallery-section bg-white py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <span class="subtitle">Our Gallery</span>
+                <h2 class="fw-bold mb-3">Life on the Road</h2>
+                <p class="text-muted">Explore our premium fleet through the lens. From rugged off-roaders to sleek sports cars.</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="gallery-item" style="height: 400px;">
+                        <img src="img/Cars/2021_jeep_wrangler_4xe_1_1920x1080.jpg" alt="Jeep Wrangler">
+                        <div class="gallery-overlay">
+                            <span class="g-cat">SUV / 4x4</span>
+                            <h5>Jeep Wrangler 4xe</h5>
+                            <a href="img/Cars/2021_jeep_wrangler_4xe_1_1920x1080.jpg" data-lightbox="Gallery" class="g-zoom"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="gallery-item" style="height: 192px;">
+                                <img src="img/Cars/2023_abarth_500e_1_1920x1080.jpg" alt="Abarth 500e">
+                                <div class="gallery-overlay">
+                                    <span class="g-cat">Compact EV</span>
+                                    <h5>Abarth 500e</h5>
+                                    <a href="img/Cars/2023_abarth_500e_1_1920x1080.jpg" data-lightbox="Gallery" class="g-zoom"><i class="fas fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="gallery-item" style="height: 192px;">
+                                <img src="img/Cars/2026_toyota_rav4_1_1920x1080.jpg" alt="Toyota RAV4">
+                                <div class="gallery-overlay">
+                                    <span class="g-cat">Crossover</span>
+                                    <h5>Toyota RAV4</h5>
+                                    <a href="img/Cars/2026_toyota_rav4_1_1920x1080.jpg" data-lightbox="Gallery" class="g-zoom"><i class="fas fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mt-0">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="gallery-item mt-3" style="height: 350px;">
+                        <img src="img/Cars/2026_porsche_911_turbo_s_1_1600x1200.jpg" alt="Porsche 911">
+                        <div class="gallery-overlay">
+                            <span class="g-cat">Sports / Luxury</span>
+                            <h5>Porsche 911 Turbo S</h5>
+                            <a href="img/Cars/2026_porsche_911_turbo_s_1_1600x1200.jpg" data-lightbox="Gallery" class="g-zoom"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+    <!-- Rental Process Start -->
+    <div class="container-fluid process-section bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <span class="subtitle">How It Works</span>
+                <h2 class="fw-bold mb-3">Simple 4-Step Rental Process</h2>
+                <p class="text-muted">Renting your dream car has never been easier. Follow these simple steps to get on the road.</p>
+            </div>
+            <div class="row g-4 position-relative">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number">01</div>
+                        <div class="step-icon mb-3"><i class="fas fa-user-circle"></i></div>
+                        <h5 class="fw-bold mb-2">Sign In</h5>
+                        <p class="text-muted small mb-0">Create your account or log in to access exclusive member rates and save your preferences.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number">02</div>
+                        <div class="step-icon mb-3"><i class="fas fa-car-side"></i></div>
+                        <h5 class="fw-bold mb-2">Browse Fleet</h5>
+                        <p class="text-muted small mb-0">Explore our premium gallery, filter by your needs, and choose your perfect ride.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number">03</div>
+                        <div class="step-icon mb-3"><i class="fas fa-calendar-check"></i></div>
+                        <h5 class="fw-bold mb-2">Book Your Ride</h5>
+                        <p class="text-muted small mb-0">Select your pick-up/drop-off dates, add extras, and securely complete your reservation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number">04</div>
+                        <div class="step-icon mb-3"><i class="fas fa-check-circle"></i></div>
+                        <h5 class="fw-bold mb-2">Get Confirmed</h5>
+                        <p class="text-muted small mb-0">Receive instant email confirmation with all your trip details. You're ready to drive!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rental Process End -->
+
+    <!-- Why Choose Us Start -->
+    <div class="container-fluid why-choose-us bg-white py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 position-relative wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="position-absolute bg-light rounded-4 d-none d-lg-block" style="width: 80%; height: 80%; top: 50px; left: 50px; z-index: 0;"></div>
+                    <div class="position-relative z-1">
+                        <img src="img/Cars/mollie-sivaram-1Wkl8h-7pFM-unsplash.jpg" class="img-fluid rounded-4 shadow-lg w-100" style="object-fit: cover; height: 520px;" alt="Why Choose Us">
+                    </div>
+                    <div class="bg-white p-4 rounded-3 shadow-lg position-absolute d-none d-md-flex align-items-center" style="bottom: 50px; left: 50px; z-index: 2; border: 1px solid rgba(0,0,0,0.05); max-width: 240px;">
+                        <div class="icon-box me-3" style="width: 48px; height: 48px; font-size: 1rem;"><i class="fas fa-smile"></i></div>
+                        <div>
+                            <h4 class="fw-bold mb-0 text-dark">50k+</h4>
+                            <p class="text-muted small mb-0">Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5 wow fadeInRight" data-wow-delay="0.4s">
+                    <span class="subtitle">Why Choose Us</span>
+                    <h2 class="fw-bold mb-4">The Smartest Way to Rent a Car</h2>
+                    <p class="text-muted mb-5">We eliminate the hassle of car rental. Transparent pricing, modern vehicles, and exceptional support from pickup to drop-off.</p>
+                    <div class="feature-list">
+                        <div class="d-flex align-items-start feature-item">
+                            <div class="icon-box flex-shrink-0 me-4"><i class="fas fa-wallet"></i></div>
+                            <div>
+                                <h5 class="fw-bold mb-1 text-dark">Best Price Guarantee</h5>
+                                <p class="text-muted mb-0 small">No hidden fees. Ever. We match any competitor's rate.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start feature-item">
+                            <div class="icon-box flex-shrink-0 me-4"><i class="fas fa-headset"></i></div>
+                            <div>
+                                <h5 class="fw-bold mb-1 text-dark">24/7 Premium Support</h5>
+                                <p class="text-muted mb-0 small">Our dedicated team is always here to help you on the road.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start feature-item">
+                            <div class="icon-box flex-shrink-0 me-4"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h5 class="fw-bold mb-1 text-dark">Full Insurance Coverage</h5>
+                                <p class="text-muted mb-0 small">Drive with complete peace of mind with our comprehensive plans.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start feature-item">
+                            <div class="icon-box flex-shrink-0 me-4"><i class="fas fa-calendar-check"></i></div>
+                            <div>
+                                <h5 class="fw-bold mb-1 text-dark">Free Cancellation</h5>
+                                <p class="text-muted mb-0 small">Flexible plans with free cancellation up to 24 hours before pickup.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us End -->
+
+    <!-- Blog Start -->
+    <div class="container-fluid blog-section bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <span class="subtitle">Our Blog</span>
+                <h2 class="fw-bold mb-3">Latest News & Travel Guides</h2>
+                <p class="text-muted">Expert tips, destination guides, and fleet updates to elevate your driving experience.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="img/Cars/2022_jeep_grand_cherokee_4xe_1_1920x1080.jpg" alt="Road Trip Routes">
+                            <span class="blog-tag">Travel Guides</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt me-1"></i> Oct 12, 2026</span>
+                                <span><i class="far fa-clock me-1"></i> 5 min read</span>
+                            </div>
+                            <h4 class="blog-title"><a href="#">Top 5 Scenic Road Trip Routes for This Fall</a></h4>
+                            <p class="blog-excerpt">Discover the most breathtaking coastal and mountain driving routes, complete with tips on the best vehicle types.</p>
+                            <a href="#" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="img/Cars/2025_toyota_sienna_1_1920x1080.jpg" alt="Family Car Guide">
+                            <span class="blog-tag">Rental Tips</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt me-1"></i> Sep 28, 2026</span>
+                                <span><i class="far fa-clock me-1"></i> 4 min read</span>
+                            </div>
+                            <h4 class="blog-title"><a href="#">How to Choose the Perfect Rental Car for Your Family</a></h4>
+                            <p class="blog-excerpt">A comprehensive guide to selecting the right vehicle based on passenger count, luggage space, and fuel efficiency.</p>
+                            <a href="#" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="img/Cars/2024_fiat_600e_1_1920x1080.jpg" alt="EV vs Hybrid">
+                            <span class="blog-tag">Fleet Insights</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt me-1"></i> Sep 15, 2026</span>
+                                <span><i class="far fa-clock me-1"></i> 6 min read</span>
+                            </div>
+                            <h4 class="blog-title"><a href="#">EV vs. Hybrid: Which is Right for Your Next Rental?</a></h4>
+                            <p class="blog-excerpt">We break down the pros, cons, and charging logistics of electric and hybrid vehicles to help you make the smartest choice.</p>
+                            <a href="#" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.1s">
+                <a href="blog.html" class="btn btn-outline-primary rounded-pill py-3 px-5 fw-bold">View All Articles</a>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Testimonial Start -->
+    <div class="testimonial-section">
+        <div class="t-glow t-glow-1"></div>
+        <div class="t-glow t-glow-2"></div>
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
+                    <span class="t-subtitle">Testimonials</span>
+                    <h2 class="t-heading">What our clients say</h2>
+                    <p class="t-intro-text">Thousands of drivers trust DriveEase for their journeys — from weekend getaways to cross-country road trips.</p>
+                    <div class="t-rating-box">
+                        <div class="t-rating-num">4.9</div>
+                        <div>
+                            <div class="t-stars mb-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="t-rating-label">Based on 2,400+ verified reviews</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <div class="t-avatar-stack">
+                            <img src="img/testimonial-1.jpg" alt="Client">
+                            <img src="img/testimonial-2.jpg" alt="Client">
+                            <img src="img/testimonial-3.jpg" alt="Client">
+                        </div>
+                        <span class="t-rating-label ms-3">50k+ happy drivers</span>
+                    </div>
+                    <div class="t-controls mt-5">
+                        <button class="t-btn t-prev"><i class="fas fa-arrow-left"></i></button>
+                        <button class="t-btn t-next"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-8 wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="t-card">
+                            <i class="fas fa-quote-right t-watermark"></i>
+                            <div class="t-stars mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="t-text">Absolutely fantastic service. The Jeep Wrangler was in pristine condition, and the airport pick-up took less than five minutes. I won't rent anywhere else.</p>
+                            <div class="t-author">
+                                <img src="img/testimonial-1.jpg" alt="Robert Anderson">
+                                <div>
+                                    <h5>Robert Anderson</h5>
+                                    <span>Business Traveler · Jeep Wrangler 4xe</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t-card">
+                            <i class="fas fa-quote-right t-watermark"></i>
+                            <div class="t-stars mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="t-text">We took the Sienna on a two-week family road trip. Spacious, spotless and incredibly fuel-efficient. Support answered us instantly when we had a flat tyre.</p>
+                            <div class="t-author">
+                                <img src="img/testimonial-2.jpg" alt="Emily Thompson">
+                                <div>
+                                    <h5>Emily Thompson</h5>
+                                    <span>Family Vacation · Toyota Sienna</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t-card">
+                            <i class="fas fa-quote-right t-watermark"></i>
+                            <div class="t-stars mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="t-text">Transparent pricing, zero hidden fees, and they upgraded me to a 911 for free. DriveEase is now the only company I book with.</p>
+                            <div class="t-author">
+                                <img src="img/testimonial-3.jpg" alt="James Wilson">
+                                <div>
+                                    <h5>James Wilson</h5>
+                                    <span>Frequent Renter · Porsche 911 Turbo S</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0">
+                            <h4 class="text-white mb-4 fw-bold"><i class="fas fa-car-side text-primary me-2"></i>DriveEase</h4>
+                        </a>
+                        <p class="text-white-50 mb-4">Your trusted partner for premium, reliable, and affordable car rental services.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">456 Motor Avenue, New York, USA</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <p class="text-white mb-0">bookings@driveease.com</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-phone-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">(+012) 3456 7890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-2">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4 fw-bold">Quick Links</h4>
+                        <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2 text-primary"></i> About Us</a>
+                        <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2 text-primary"></i> Our Fleet</a>
+                        <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2 text-primary"></i> Services</a>
+                        <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2 text-primary"></i> Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-2">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4 fw-bold">Support</h4>
+                        <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2 text-primary"></i> Privacy Policy</a>
+                        <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2 text-primary"></i> Terms & Conditions</a>
+                        <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2 text-primary"></i> FAQ</a>
+                        <a href="#" class="d-block mb-2"><i class="fas fa-angle-right me-2 text-primary"></i> Help Center</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4 fw-bold">Opening Hours</h4>
+                        <div class="opening-date mb-3 pb-3">
+                            <div class="opening-clock flex-shrink-0 mb-2">
+                                <h6 class="text-white mb-0 me-auto">Monday - Friday:</h6>
+                                <p class="mb-0 text-white-50"><i class="fas fa-clock text-primary me-2"></i> 08:00 AM - 20:00 PM</p>
+                            </div>
+                            <div class="opening-clock flex-shrink-0 mb-2">
+                                <h6 class="text-white mb-0 me-auto">Saturday - Sunday:</h6>
+                                <p class="mb-0 text-white-50"><i class="fas fa-clock text-primary me-2"></i> 09:00 AM - 18:00 PM</p>
+                            </div>
+                            <div class="opening-clock flex-shrink-0">
+                                <h6 class="text-white mb-0 me-auto">Airport Desk:</h6>
+                                <p class="mb-0 text-white-50"><i class="fas fa-clock text-primary me-2"></i> 24/7 Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-white-50"><a href="#" class="border-bottom text-white text-decoration-none"><i class="fas fa-copyright text-light me-2"></i>DriveEase</a>, All rights reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-white-50">
+                    Designed By <a class="border-bottom text-white text-decoration-none" href="https://htmlcodex.com">HTML Codex</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Initialize Carousels -->
+    <script>
+        $(document).ready(function(){
+            // Brand Carousel
+            $(".brand-carousel").owlCarousel({
+                autoplay: true, 
+                smartSpeed: 1500, 
+                margin: 25, 
+                loop: true, 
+                nav: false, 
+                dots: false,
+                responsive: { 
+                    0:{ items: 2 }, 
+                    576:{ items: 3 }, 
+                    768:{ items: 4 }, 
+                    992:{ items: 5 }, 
+                    1200:{ items: 6 } 
+                }
+            });
+            
+            // Testimonial Carousel
+            var owl = $(".testimonial-carousel");
+            owl.owlCarousel({
+                items: 1, 
+                loop: true, 
+                margin: 24, 
+                autoplay: true, 
+                autoplayTimeout: 6000, 
+                smartSpeed: 900, 
+                dots: true, 
+                nav: false
+            });
+            
+            // Custom Testimonial Controls
+            $(".t-next").on("click", function(){ owl.trigger("next.owl.carousel"); });
+            $(".t-prev").on("click", function(){ owl.trigger("prev.owl.carousel", [300]); });
+        });
+    </script>
+</body>
+</html>
